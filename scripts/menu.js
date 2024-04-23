@@ -1,7 +1,8 @@
-﻿export function initialize(currentPage) {
+﻿const root = "/WSOA3028_2426761"
+export function initialize(currentPage) {
 	const menuItems = [
-		{ name: "Home", href: "../index.html" },
-		{ name: "Blogs", href: "../blogs/blogs.html" },
+		{ name: "Home", href: root + "/index.html" },
+		{ name: "Blogs", href: root + "/blogs/blogs.html" },
 		{ name: "Designs", href: "../design/design.html" },
 		{ name: "Essays", href: "../essay/essay.html" },
 		{ name: "Profile", href: "../profile/profile.html" },

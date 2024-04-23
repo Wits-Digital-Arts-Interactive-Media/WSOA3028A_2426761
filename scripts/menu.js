@@ -1,6 +1,6 @@
 ﻿export function initialize(currentPage) {
 	const menuItems = [
-		{ name: "Home", href: "../home/index.html" },
+		{ name: "Home", href: "../index.html" },
 		{ name: "Blogs", href: "../blogs/blogs.html" },
 		{ name: "Designs", href: "../design/design.html" },
 		{ name: "Essays", href: "../essay/essay.html" },

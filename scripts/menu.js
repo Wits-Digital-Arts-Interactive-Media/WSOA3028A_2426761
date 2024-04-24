@@ -1,14 +1,14 @@
 ﻿const root = "/WSOA3028_2426761"
-export function initialize(currentPage) {
-	const menuItems = [
-		{ name: "Home", href: root + "/index.html" },
-		{ name: "Blogs", href:`${root}/blogs/blogs.html` },
-		{ name: "Designs", href: `${root}/design/design.html` },
-		{ name: "Essays", href: root + "/essay/essay.html" },
-		{ name: "Profile", href: "/profile/profile.html" },
-		{ name: "Portfolio", href: "/portfolio/portfolio.html" }
-	];
 
+const menuItems = [
+	{ name: "Home", href: root + "/index.html" },
+	{ name: "Blogs", href: `${root}/blogs/blogs.html` },
+	{ name: "Designs", href: `${root}/design/design.html` },
+	{ name: "Essays", href: root + "/essay/essay.html" },
+	{ name: "Profile", href: "/profile/profile.html" },
+	{ name: "Portfolio", href: "/portfolio/portfolio.html" }
+];
+export function initialize(currentPage) {
 	var nav = document.querySelector("header > nav");
 	var ul = document.createElement("ul"); // the unordered list
 

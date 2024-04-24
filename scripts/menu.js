@@ -1,7 +1,7 @@
 ﻿const root = "/WSOA3028A_2426761"
 
 const menuItems = [
-	{ name: "Home", href: root + "/index.html" },
+	{ name: "Home", href: root + "/index.html" }, //change this to be like the other href
 	{ name: "Blogs", href: `${root}/blogs/blogs.html` },
 	{ name: "Designs", href: `${root}/design/design.html` },
 	{ name: "Essays", href: `${root}/essay/essay.html` },

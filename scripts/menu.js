@@ -13,14 +13,15 @@ export function initialize(currentPage) {
 	var ul = document.createElement("ul"); // the unordered list
 
 	for (let menuItem of menuItems) {
+		var li = document.createElement("li")
 		if (currentPage != menuItem.name) {
-			var li = document.createElement("li")
 			var a = document.createElement("a")
 			a.innerText = menuItem.name
 			a.setAttribute("href", menuItem.href)
 			li.appendChild(a)
-			ul.appendChild(li)
 		}
+		else { li.innerText = menuItem.name }
+			ul.appendChild(li)
 	}
 	nav.appendChild(ul)
 }

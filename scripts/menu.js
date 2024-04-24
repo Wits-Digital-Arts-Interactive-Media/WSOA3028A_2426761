@@ -22,6 +22,5 @@ export function initialize(currentPage) {
 			ul.appendChild(li)
 		}
 	}
-
 	nav.appendChild(ul)
 }

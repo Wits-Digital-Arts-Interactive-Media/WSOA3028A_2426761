@@ -4,9 +4,9 @@ const menuItems = [
 	{ name: "Home", href: root + "/index.html" },
 	{ name: "Blogs", href: `${root}/blogs/blogs.html` },
 	{ name: "Designs", href: `${root}/design/design.html` },
-	{ name: "Essays", href: root + "/essay/essay.html" },
-	{ name: "Profile", href: "/profile/profile.html" },
-	{ name: "Portfolio", href: "/portfolio/portfolio.html" }
+	{ name: "Essays", href: `${root}/essay/essay.html` },
+	{ name: "Profile", href: `${root}/profile/profile.html` },
+	{ name: "Portfolio", href: `${root}/portfolio/portfolio.html` }
 ];
 export function initialize(currentPage) {
 	var nav = document.querySelector("header > nav");

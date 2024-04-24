@@ -2,11 +2,11 @@
 export function initialize(currentPage) {
 	const menuItems = [
 		{ name: "Home", href: root + "/index.html" },
-		{ name: "Blogs", href: root + "../blogs/blogs.html" },
-		{ name: "Designs", href: root + "../design/design.html" },
-		{ name: "Essays", href: "../essay/essay.html" },
-		{ name: "Profile", href: "../profile/profile.html" },
-		{ name: "Portfolio", href: "../portfolio/portfolio.html" }
+		{ name: "Blogs", href: root + "/blogs/blogs.html" },
+		{ name: "Designs", href: root + "/design/design.html" },
+		{ name: "Essays", href: root + "/essay/essay.html" },
+		{ name: "Profile", href: "/profile/profile.html" },
+		{ name: "Portfolio", href: "/portfolio/portfolio.html" }
 	];
 
 	var nav = document.querySelector("header > nav");

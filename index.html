@@ -12,6 +12,7 @@
 		import { initialize } from './scripts/menu.js';
 		initialize("Home");
 	</script>
+	<script type="text/javascript" src="scripts/menuAnimation.js"></script>
 
 </head>
 <body>
@@ -21,9 +22,12 @@
 	</header>
 
 	<nav>
-		<h1><a href="blogs/blogs.html"> Blogs</a></h1>
-		<p>Weekly blogs regarding verious topics about interaction with the web.</p>
-		<hr>
+		<div style="position:absolute">
+			<img id="blogIcon" onmouseover="bigImg('blogIcon','myBlogs')" onmouseout="normalImg('blogIcon', 'myBlogs')" src="images/blogs/blogIcon.png" width="200" height="200" />
+		</div>
+		<div id="myBlogs" style="position: absolute; visibility: hidden" onmouseover="bigImg('blogIcon', 'myBlogs')">
+			<h1><a style="color:white" href="blogs/blogs.html"> Blogs </a></h1>
+		</div>
 
 		<h1><a href="design/design.html"> Designs</a></h1>
 		<p>The design process of creating this website and its many iterations.</p>

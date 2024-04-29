@@ -25,6 +25,7 @@ var rotated = document.getElementById("blogIcon");
 let rotation = 0;
 const angle = 1;
 
+//I will get all icons on the home page roataing soon.. I just wanted to make sure it could be done :)
 function rotateImage() {
 	if (rotated == null) { rotated = document.getElementById("blogIcon"); }
 	rotation = (rotation + angle) % 360;

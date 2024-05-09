@@ -1,8 +1,8 @@
 
 function bigImg(imgId, linkId) {
 	var img = document.getElementById(imgId)
-	img.style.height = "300px";
-	img.style.width = "300px";
+	img.style.height = "250px";
+	img.style.width = "250px";
 	var imgRect = img.getBoundingClientRect();
 	setTimeout(rotateImage, 5);
 
@@ -20,20 +20,24 @@ function normalImg(imgId, linkId) {
 	document.getElementById(linkId).style.visibility = "hidden";
 }
 
-var rotated = document.getElementById("blogIcon");
-
-let rotation = 0;
-const angle = 1;
 
 //I will get all icons on the home page roataing soon.. I just wanted to make sure it could be done :)
-function rotateImage() {
-	if (rotated == null) { rotated = document.getElementById("blogIcon"); }
-	rotation = (rotation + angle) % 360;
-	rotated.style.transform = `rotate(${rotation}deg)`;
-	// setInterval(rotateImage, 100)
-	//if (onmouseover()) {
-	//  setTimeout(rotateImage)
-	//}
-}
-setInterval(rotateImage, 100)
+var rotatingIcons = [
+	{ name: "Blogs", iconId: "blogIcon", icon: null, rotation: 0 },
+	{ name: "Designs", iconId: "designIcon", icon: null, rotation: 0 },
+	{ name: "Essays", iconId: "essayIcon", icon: null, rotation: 0 },
+	{ name: "Portfolio", iconId: "portfolioIcon", icon: null, rotation: 0 },
+	{ name: "Profile", iconId: "profileIcon", icon: null, rotation: 0 }
+];
 
+const angle = 1;
+
+function rotateImage() {
+	for (let rotatingIcon of rotatingIcons) {
+		if (rotatingIcon.icon == null) { rotatingIcon.icon = document.getElementById(rotatingIcon.iconId); }
+		rotatingIcon.rotation = (rotatingIcon.rotation + angle) % 360;
+		rotatingIcon.icon.style.transform = `rotate(${rotatingIcon.rotation}deg)`;
+	}
+}
+
+setInterval(rotateImage, 100)

@@ -7,7 +7,9 @@ const blogItems = [
 	"week6.html",
 	"week8.html",
 	"week9.html",
-	"week10.html"
+	"week10.html",
+	"week11.html",
+	"reflection2.html"
 ]
 
 var blogIndex = 0;

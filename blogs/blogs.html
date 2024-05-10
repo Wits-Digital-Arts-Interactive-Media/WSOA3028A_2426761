@@ -1,39 +1,38 @@
 ﻿<!DOCTYPE html>
-<html>
+<html style="height: 55%">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale =1.0" />
-	<meta name="description" content="Weekly blogs page" />
+	<meta name="description" content="Blog home page with my weekly blogs page" />
 	<meta name="author" content="Mikisha Aryanna Pillay" />
-	<title>Blogs</title>
+	<title>Blog Page</title>
 
 	<script type="module" src="../scripts/menu.js"></script>
+	<script type="text/javascript" src="../scripts/blogPage.js"></script>
 	<script type="module">
 		import { initialize } from '../scripts/menu.js';
 		initialize("Blogs");
 	</script>
 </head>
-<body>
+<body style="height: 100%">
 	<header>
-		<h1><b>The Mikisha-verse</b></h1>
 		<nav></nav>
 	</header>
 
 	<h1> Welcome to my weekly blogs </h1>
+	<div>
+		<nav>
+			<center>
+				<button id="previous" onclick="moveBack()"><</button>
+				<button id="next" onclick="moveNext()">></button>
+			</center>
+		</nav>
+	</div>
 
-	<nav>
-		<h2>Week 1 - <a href="week1.html"> Imagining the Internet</a></h2>
-		<h2>Week 2 - <a href="week2.html"> Interaction with the www</a></h2>
-		<h2>Week 3 - <a href="week3.html"> Interaction Design for the Web</a></h2>
-		<h2>Week 4 - <a href="week4.html"> IxD Process Mashup</a></h2>
-		<h2>Week 5 - <a href="reflection1.html"> Mini Reflection</a></h2>
-		<h2>Week 6 - <a href="week6.html"> Ethics of UX practice</a></h2>
-		<h2>Week 8 - <a href="week8.html"> Internet, Society and Desugn Justice</a></h2>
-		<h2>Week 9 - <a href="week9.html"> The world in www</a></h2>
-		<h2>Week 10 - <a href="week10.html"> Digital Inequality</a></h2>
-	</nav>
+	<iframe id="blogFrame" width="98%" height="100%" src="week1.html" style="overflow:hidden; border:hidden; padding:6px 6px 6px 6px">
+	</iframe>
 
-	<hr>
+	<!--<hr>
 	<footer>
 		<nav>
 			<center>
@@ -41,6 +40,6 @@
 				<a href="../design.html"> DESIGN</a> &nbsp;
 			</center>
 		</nav>
-	</footer>
+	</footer>-->
 </body>
 </html>

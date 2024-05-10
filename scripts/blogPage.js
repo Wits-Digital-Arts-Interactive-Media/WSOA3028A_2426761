@@ -1,15 +1,29 @@
 const blogItems = [
-	{ name: "Imagining the Internet", href: "/blogs/week1.html" }, //change this to be like the other href
-	{ name: "Interaction with the www", href: "/blogs/week2.html"  },
-	{ name: "Interaction Design for the Web", href: "/blogs/week3.html"  },
-	{ name: "IxD Process Mashup", href: "/blogs/week4.html"  },
-	{ name: "Mini Reflection", href: "/blogs/reflection1.html" },
-	{ name: "Ethics of UX practice", href: "/blogs/week6.html" },
-	{ name: "Internet, Society and Desugn Justice", href: "/blogs/week8.html" },
-	{ name: "The world in www", href: "/blogs/week9.html" },
-	{ name: "Digital Inequality", href: "/blogs/week10.html" }
-];
+	"week1.html",
+	"week2.html",
+	"week3.html",
+	"week4.html",
+	"reflection1.html",
+	"week6.html",
+	"week8.html",
+	"week9.html",
+	"week10.html"
+]
 
-function initializeBlog() {
+var blogIndex = 0;
 
+function moveNext() {
+	if (blogIndex < blogItems.length - 1) {
+		blogIndex++;
+		var post = document.getElementById("blogFrame");
+		post.src = blogItems[blogIndex];
+	}
+}
+
+function moveBack() {
+	if (blogIndex > 0) {
+		blogIndex--;
+		var post = document.getElementById("blogFrame");
+		post.src = blogItems[blogIndex];
+	}
 }

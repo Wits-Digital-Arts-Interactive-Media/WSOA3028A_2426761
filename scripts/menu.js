@@ -32,16 +32,16 @@ export function initialize(currentPage) {
 	var menuContainer = document.createElement("span");
 	alert(nav);
 	menuItems.forEach((menuItem) => {
-		const text = document.createTextNode(menuItem.name);
+		let text = document.createTextNode(menuItem.name);
 		if (currentPage !== menuItem.name) {
-			const a = document.createElement("a");
+			let a = document.createElement("a");
 			a.appendChild(text);
 			a.href = menuItem.href;
 			menuContainer.appendChild(a);
 		} else {
 			menuContainer.appendChild(text);
 		}
-		menuContainer.appendChild(document.createTextNode("\u00A0\u00A0\u00A0"));
+		menuContainer.appendChild(document.createTextNode("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"));
 	});
 	nav.appendChild(menuContainer);
 }

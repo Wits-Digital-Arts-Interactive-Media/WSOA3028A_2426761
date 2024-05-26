@@ -8,8 +8,8 @@ function bigImg(imgId, linkId) {
 
 	var div = document.getElementById(linkId);
 	var divRect = div.getBoundingClientRect();
-	div.style.top = (imgRect.top + (imgRect.height - divRect.height) / 2) + 'px';
-	div.style.left = (imgRect.left + (imgRect.width - divRect.width) / 2) + 'px';
+	//div.style.top = (imgRect.top + (imgRect.height - divRect.height) / 2) + 'px';
+	//div.style.left = (imgRect.left + (imgRect.width - divRect.width) / 2) + 'px';
 	div.style.visibility = "visible";
 }
 

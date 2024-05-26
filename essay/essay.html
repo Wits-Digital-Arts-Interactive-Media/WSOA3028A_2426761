@@ -8,6 +8,7 @@
 	<title>Essay section</title>
 
 	<script type="module" src="../scripts/menu.js"></script>
+	<script type="text/javascript" src="../scripts/essayPage.js"></script>
 	<script type="module">
 		import { initialize } from '../scripts/menu.js';
 		initialize("Essays");
@@ -15,11 +16,37 @@
 </head>
 <body>
 	<header>
-		<h1> <b> The Mikisha-verse </b> </h1>
-		<nav></nav>
+		<div class="row">
+			<div class="column heading">
+				<label>mikisha-verse</label>
+			</div>
+			<div class="column navDiv">
+				<nav id="navMenu" />
+			</div>
+		</div>
 	</header>
-	<nav>
-		<h2>Essay 1 - <a href="essay1.html"> Ethical UI and UX Design</a></h2>
-	</nav>
+
+	<div class="essayContent">
+		<!--style="float:inline-start"-->
+		<nav class="articleNav">
+			<center>
+				<h1> Academic Essays </h1>
+				<button id="previous" onclick="moveBack()"><</button> &emsp;
+				<button id="next" onclick="moveNext()">></button>
+			</center>
+		</nav>
+	</div>
+	<center>
+		<iframe class="essayFrame" id="essayFrame" src="essay1.html"></iframe>
+	</center>
+	<hr>
+	<footer>
+		<nav>
+			<!--<center>
+				<a href="index.html"> HOME</a> &nbsp;
+				<a href="design.html"> DESIGN</a> &nbsp;
+			</center>-->
+		</nav>
+	</footer>
 </body>
 </html>

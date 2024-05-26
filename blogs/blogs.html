@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
-<html style="height: 52%">
+<html>
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale =1.0" />
-	<meta name="description" content="Blog home page with my weekly blogs page" />
+	<meta name="description" content="Weekly blogs page" />
 	<meta name="author" content="Mikisha Aryanna Pillay" />
-	<title>Blog Page</title>
+	<title>Weekly blogs page</title>
 
 	<script type="module" src="../scripts/menu.js"></script>
 	<script type="text/javascript" src="../scripts/blogPage.js"></script>
@@ -13,33 +13,42 @@
 		import { initialize } from '../scripts/menu.js';
 		initialize("Blogs");
 	</script>
+	<link href="../styles/normalise.css" rel="stylesheet" />
+	<link href="../styles/main.css" rel="stylesheet" />
 </head>
-<body style="height: 100%">
+
+<body>
 	<header>
-		<h1><b>The Mikisha-verse</b></h1>
-		<nav></nav>
+		<div class="row">
+			<div class="column heading">
+				<label>mikisha-verse</label>
+			</div>
+			<div class="column navDiv">
+				<nav id="navMenu" />
+			</div>
+		</div>
 	</header>
 
-	<h1> Welcome to my weekly blogs </h1>
-	<div>
-		<nav>
+	<div class="blogContent">
+		<!--style="float:inline-start"-->
+		<nav class="articleNav">
 			<center>
-				<button id="previous" onclick="moveBack()"><</button>
+				<h1> Welcome to my weekly blogs </h1>
+				<button id="previous" onclick="moveBack()"><</button> &emsp;
 				<button id="next" onclick="moveNext()">></button>
 			</center>
 		</nav>
 	</div>
-
-	<iframe id="blogFrame" width="99%" height="100%" src="week1.html" style="overflow:hidden; border:hidden; padding:6px 6px 6px 6px">
-	</iframe>
-
+	<center>
+		<iframe class="blogFrame" id="blogFrame" src="week1.html"></iframe>
+	</center>
 	<hr>
 	<footer>
 		<nav>
-			<center>
-				<a href="../index.html"> HOME</a> &nbsp;
-				<a href="../design.html"> DESIGN</a> &nbsp;
-			</center>
+			<!--<center>
+				<a href="index.html"> HOME</a> &nbsp;
+				<a href="design.html"> DESIGN</a> &nbsp;
+			</center>-->
 		</nav>
 	</footer>
 </body>

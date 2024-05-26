@@ -8,20 +8,40 @@ const menuItems = [
 	{ name: "Profile", href: `${root}/profile/profile.html` },
 	{ name: "Portfolio", href: `${root}/portfolio/portfolio.html` }
 ];
-export function initialize(currentPage) {
-	var nav = document.querySelector("header > nav");
-	var ul = document.createElement("ul"); // the unordered list
+//export function initialize(currentPage) {
+//	var nav = document.getElementById("navMenu");
+//	var ul = document.createElement("ul"); // the unordered list
 
-	for (let menuItem of menuItems) {
-		var li = document.createElement("li")
-		if (currentPage != menuItem.name) {
-			var a = document.createElement("a")
-			a.innerText = menuItem.name
-			a.setAttribute("href", menuItem.href)
-			li.appendChild(a)
+//	for (let menuItem of menuItems) {
+//		var li = document.createElement("li")
+//		if (currentPage != menuItem.name) {
+//			var a = document.createElement("a")
+//			a.innerText = menuItem.name
+//			a.setAttribute("href", menuItem.href)
+//			li.appendChild(a)
+//		}
+//		else { li.innerText = menuItem.name }
+//			ul.appendChild(li)
+//	}
+//	nav.appendChild(ul)
+//}
+
+
+export function initialize(currentPage) {
+	var nav = document.getElementById("navMenu");
+	var menuContainer = document.createElement("span");
+	alert(nav);
+	menuItems.forEach((menuItem) => {
+		const text = document.createTextNode(menuItem.name);
+		if (currentPage !== menuItem.name) {
+			const a = document.createElement("a");
+			a.appendChild(text);
+			a.href = menuItem.href;
+			menuContainer.appendChild(a);
+		} else {
+			menuContainer.appendChild(text);
 		}
-		else { li.innerText = menuItem.name }
-			ul.appendChild(li)
-	}
-	nav.appendChild(ul)
+		menuContainer.appendChild(document.createTextNode("\u00A0\u00A0\u00A0"));
+	});
+	nav.appendChild(menuContainer);
 }

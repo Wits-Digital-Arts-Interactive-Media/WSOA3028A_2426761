@@ -28,9 +28,9 @@ const menuItems = [
 
 
 export function initialize(currentPage) {
-	var nav = document.getElementById("navMenu");
-	var menuContainer = document.createElement("span");
-	alert(nav);
+	let nav = document.getElementById("navMenu");
+	let menuContainer = document.createElement("span");
+	//alert(nav);
 	menuItems.forEach((menuItem) => {
 		let text = document.createTextNode(menuItem.name);
 		if (currentPage !== menuItem.name) {

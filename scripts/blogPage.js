@@ -12,12 +12,12 @@ const blogItems = [
 	"reflection2.html"
 ]
 
-var blogIndex = 0;
+let blogIndex = 0;
 
 function moveNext() {
 	if (blogIndex < blogItems.length - 1) {
 		blogIndex++;
-		var post = document.getElementById("blogFrame");
+		let post = document.getElementById("blogFrame");
 		post.src = blogItems[blogIndex];
 	}
 }
@@ -25,7 +25,7 @@ function moveNext() {
 function moveBack() {
 	if (blogIndex > 0) {
 		blogIndex--;
-		var post = document.getElementById("blogFrame");
+		let post = document.getElementById("blogFrame");
 		post.src = blogItems[blogIndex];
 	}
 }

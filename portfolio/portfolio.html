@@ -1,22 +1,40 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale =1.0" />
-  <meta name="description" content="Mikisha's portfolio page" />
-  <meta name="author" content="Mikisha Aryanna Pillay" />
-  <title> Portfolio</title>
+	<title> Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale =1.0" />
+	<meta name="description" content="Mikisha's portfolio page" />
+	<meta name="author" content="Mikisha Aryanna Pillay" />
+	<link href="../styles/normalise.css" rel="stylesheet" />
+	<link href="../styles/main.css" rel="stylesheet" />
 
-  <script type="module" src="../scripts/menu.js"></script>
-  <script type="module">
-    import { initialize } from './../scripts/menu.js';
-    initialize("Portfolio");
-  </script>
+	<script type="module" src="../scripts/menu.js"></script>
+	<script type="module">
+		import { initialize } from './../scripts/menu.js';
+		initialize("Portfolio");
+	</script>
 </head>
 <body>
-  <header>
-    <h1> <b> The Mikisha-verse </b> </h1>
-    <nav></nav>
-  </header>
+	<header>
+		<div class="row">
+			<div class="column heading">
+				<label>mikisha-verse</label>
+			</div>
+			<div class="column navDiv">
+				<nav id="navMenu" />
+			</div>
+		</div>
+	</header>
+
+	<div class="content content-portfolio">
+		<nav class="articleNav">
+			<center>
+				<h1> Portfolio </h1>
+			</center>
+		</nav>
+		<center>
+		</center>
+	</div>
 </body>
 </html>

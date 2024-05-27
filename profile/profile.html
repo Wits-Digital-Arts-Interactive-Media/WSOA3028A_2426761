@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+	<title> Profile </title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale =1.0" />
 	<meta name="description" content="Mikisha's Profile page" />
 	<meta name="author" content="Mikisha Aryanna Pillay" />
-	<title> Profile </title>
+	<link href="../styles/normalise.css" rel="stylesheet" />
+	<link href="../styles/main.css" rel="stylesheet" />
 
 	<script type="module" src="../scripts/menu.js"></script>
 	<script type="module">
@@ -13,27 +15,41 @@
 		initialize("Profile");
 	</script>
 </head>
-<body>  
-  <header>
-    <h1> <b> The Mikisha-verse </b> </h1>
-    <nav></nav>
-  </header>
-	<h2>Profile</h2>
-	<section>
-		<p>
-			<img src="../images/profile/cartoonMikisha.jpg" width="625" height="625"
-					 alt="A digital cartoon picture of Mikisha"
-					 title="Digitally drawn image of Mikisha">
-		</p>
-		<p>
-			Hey there!
-			My name is Mikisha Pillay.
-		</p>
-		<p>
-			I am a Digital Arts Engineering student and a proud volleyball player who lives in South Africa. I’m so 
-			excited to interact with you through my website today. I hope you like what you see and enjoy whatever journey my portfolio site 
-			takes you on. Have fun :)
-		</p>
-	</section>
+<body>
+	<header>
+		<div class="row">
+			<div class="column heading">
+				<label>mikisha-verse</label>
+			</div>
+			<div class="column navDiv">
+				<nav id="navMenu" />
+			</div>
+		</div>
+	</header>
+
+	<div class="content content-profile">
+		<nav class="articleNav">
+			<center>
+				<h1> Profile </h1>
+			</center>
+		</nav>
+		<section>
+			<p>
+				<img src="../images/profile/cartoonMikisha.jpg" width="625" height="625"
+						 alt="A digital cartoon picture of Mikisha"
+						 title="Digitally drawn image of Mikisha">
+			</p>
+			<p>
+				Hey there!
+				My name is Mikisha Pillay.
+			</p>
+			<p>
+				I am a Digital Arts Engineering student and a proud volleyball player who lives in South Africa. I’m so
+				excited to interact with you through my website today. I hope you like what you see and enjoy whatever journey my portfolio site
+				takes you on. Have fun :)
+			</p>
+		</section>
+	</div>
+	
 </body>
 </html>

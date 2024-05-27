@@ -118,8 +118,20 @@ article {
 	background: linear-gradient(180deg, #9E1711, #00072D, #00072D);
 }
 
+.content-designs {
+	background: linear-gradient(180deg, #fdc934, #00072D, #00072D);
+}
+
 .content-essays {
 	background: linear-gradient(180deg, #08A045, #00072D, #00072D);
+}
+
+.content-profile {
+	background: linear-gradient(180deg, #2477A9, #00072D, #00072D);
+}
+
+.content-portfolio {
+	background: linear-gradient(180deg, #6B6C6F, #00072D, #00072D);
 }
 
 @keyframes gradientBG {

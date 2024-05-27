@@ -17,7 +17,7 @@ let blogIndex = 0;
 function moveNext() {
 	if (blogIndex < blogItems.length - 1) {
 		blogIndex++;
-		let post = document.getElementById("blogFrame");
+		let post = document.getElementById("frame");
 		post.src = blogItems[blogIndex];
 	}
 }
@@ -25,7 +25,7 @@ function moveNext() {
 function moveBack() {
 	if (blogIndex > 0) {
 		blogIndex--;
-		let post = document.getElementById("blogFrame");
+		let post = document.getElementById("frame");
 		post.src = blogItems[blogIndex];
 	}
 }

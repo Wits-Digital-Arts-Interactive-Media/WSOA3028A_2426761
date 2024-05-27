@@ -1,47 +1,39 @@
 ﻿const root = "/WSOA3028A_2426761"
 
 const menuItems = [
-	{ name: "Home", href: root + "/index.html" }, //change this to be like the other href
-	{ name: "Blogs", href: `${root}/blogs/blogs.html` },
-	{ name: "Designs", href: `${root}/design/design.html` },
-	{ name: "Essays", href: `${root}/essay/essay.html` },
-	{ name: "Profile", href: `${root}/profile/profile.html` },
-	{ name: "Portfolio", href: `${root}/portfolio/portfolio.html` }
+  { name: "Home", href: `${root}/index.html`, activeStyle: '' },
+  { name: "Blogs", href: `${root}/blogs/blogs.html`, activeStyle: 'activeItem-blogs' },
+  { name: "Designs", href: `${root}/design/design.html`, activeStyle: 'activeItem-designs' },
+  { name: "Essays", href: `${root}/essay/essay.html`, activeStyle: 'activeItem-essays' },
+  { name: "Profile", href: `${root}/profile/profile.html`, activeStyle: 'activeItem-profile' },
+  { name: "Portfolio", href: `${root}/portfolio/portfolio.html`, activeStyle: 'activeItem-portfolio' }
 ];
-//export function initialize(currentPage) {
-//	var nav = document.getElementById("navMenu");
-//	var ul = document.createElement("ul"); // the unordered list
-
-//	for (let menuItem of menuItems) {
-//		var li = document.createElement("li")
-//		if (currentPage != menuItem.name) {
-//			var a = document.createElement("a")
-//			a.innerText = menuItem.name
-//			a.setAttribute("href", menuItem.href)
-//			li.appendChild(a)
-//		}
-//		else { li.innerText = menuItem.name }
-//			ul.appendChild(li)
-//	}
-//	nav.appendChild(ul)
-//}
-
 
 export function initialize(currentPage) {
-	let nav = document.getElementById("navMenu");
-	let menuContainer = document.createElement("span");
-	//alert(nav);
-	menuItems.forEach((menuItem) => {
-		let text = document.createTextNode(menuItem.name);
-		if (currentPage !== menuItem.name) {
-			let a = document.createElement("a");
-			a.appendChild(text);
-			a.href = menuItem.href;
-			menuContainer.appendChild(a);
-		} else {
-			menuContainer.appendChild(text);
-		}
-		menuContainer.appendChild(document.createTextNode("\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"));
-	});
-	nav.appendChild(menuContainer);
+  let nav = document.getElementById("navMenu");
+  menuItems.forEach((menuItem) => {
+    let text = document.createTextNode(menuItem.name);
+    let div = document.createElement("div");
+
+    if (currentPage !== menuItem.name) {
+
+      let a = document.createElement("a");
+      a.appendChild(text);
+      a.href = menuItem.href;
+      a.className = "menuItem";
+
+      div.className = "menuItemDiv";
+      div.appendChild(a);
+    }
+    else {
+      let s = document.createElement("span");
+      s.appendChild(text);
+      s.className = "menuItem";
+
+      div.className = "menuItemDiv activeItem " + menuItem.activeStyle;
+      div.appendChild(s);
+    }
+
+    nav.appendChild(div);
+  });
 }

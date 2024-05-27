@@ -3,13 +3,16 @@ html {
 	color: white;
 	color-scheme: dark;
 }
-/*
-header{
-	display: inline;
-}*/
+
+body {
+	height: 100%;
+}
 
 .column {
 	float: left;
+	height: 100px;
+	justify-items: center;
+	align-content: center;
 }
 
 /* Clear floats after the columns */
@@ -20,28 +23,22 @@ header{
 }
 
 .heading {
-	margin: 20px;
+	margin-left: 6px;
 	font-family: Britannic;
 	font-size: 2.5em;
 	text-size-adjust: auto;
 	color: white;
-	/*background-color: yellowgreen;*/
+	align-content: center;
 }
 
 .navDiv {
 	float: right;
-	text-align: right;
-	margin: 30px 20px 20px 20px;
-	/*margin-right: 40px;*/
 	color: white;
-	font-family: sans-serif;
 	color-scheme: dark;
-	/*text-decoration: none;*/
+	font-family: sans-serif;
+	text-align: right;
+	align-content: center;
 }
-/*
-#navMenu{
-	text-decoration: none;
-}*/
 
 /*for the spheres*/
 .sphereNav {
@@ -65,7 +62,6 @@ header{
 	align-content: center;
 	flex-wrap: wrap;
 	height: 100%;
-	/*background-color: lightpink;*/
 }
 
 .iconContainer {
@@ -77,8 +73,6 @@ header{
 	align-items: center;
 	align-content: center;
 	vertical-align: middle;
-	/*flex-wrap: wrap;*/
-	/*background-color: aquamarine;*/
 }
 
 .homeTagline {
@@ -88,17 +82,101 @@ header{
 	justify-content: center;
 	font-family: Britannic;
 	font-size: 300%;
-	margin-top: 100px;
+	margin: 100px 0px;
 }
 
-.blogFrame {
-	/*overflow: hidden;*/
+#frame {
 	border: hidden;
-	width: 50vw;
+	width: 70vw;
 	height: 65vh;
 }
 
 .articleNav {
 	position: center;
 	padding: 10px 0px;
+}
+
+	.articleNav h1 {
+		font-family: Britannic;
+		font-size: 300%
+	}
+
+article {
+	padding: 0px 20px;
+}
+
+.content {
+	margin: 0;
+	width: 100%;
+	height: 88vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background-size: 100% 100%;
+}
+
+.content-blogs {
+	background: linear-gradient(180deg, #9E1711, #00072D, #00072D);
+}
+
+.content-essays {
+	background: linear-gradient(180deg, #08A045, #00072D, #00072D);
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 100% 50%;
+	}
+}
+
+.containerbanner {
+	width: 100%;
+	position: absolute;
+	top: 35%;
+	text-align: center;
+}
+
+.menuItemDiv {
+	display: inline-grid;
+	height: 70px;
+	width: 70px;
+	margin: 3px 3px;
+	justify-items: center;
+	align-content: center;
+}
+
+.menuItem {
+	text-decoration: none;
+}
+
+.activeItem {
+	border-radius: 50%;
+	font-family: sans-serif;
+}
+
+.activeItem-blogs {
+	background-color: #9e1711;
+}
+
+.activeItem-designs {
+	background-color: #fdc934;
+}
+
+.activeItem-essays {
+	background-color: #08a045;
+}
+
+.activeItem-profile {
+	background-color: #2477A9;
+}
+
+.activeItem-portfolio {
+	background-color: #6B6C6F;
 }

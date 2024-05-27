@@ -13,6 +13,8 @@
 		import { initialize } from '../scripts/menu.js';
 		initialize("Essays");
 	</script>
+	<link href="../styles/normalise.css" rel="stylesheet" />
+	<link href="../styles/main.css" rel="stylesheet" />
 </head>
 <body>
 	<header>
@@ -26,27 +28,15 @@
 		</div>
 	</header>
 
-	<div class="essayContent">
-		<!--style="float:inline-start"-->
+	<div class="content">
 		<nav class="articleNav">
 			<center>
 				<h1> Academic Essays </h1>
-				<button id="previous" onclick="moveBack()"><</button> &emsp;
-				<button id="next" onclick="moveNext()">></button>
 			</center>
 		</nav>
-	</div>
-	<center>
-		<iframe class="essayFrame" id="essayFrame" src="essay1.html"></iframe>
-	</center>
-	<hr>
-	<footer>
-		<nav>
-			<!--<center>
-				<a href="index.html"> HOME</a> &nbsp;
-				<a href="design.html"> DESIGN</a> &nbsp;
-			</center>-->
-		</nav>
-	</footer>
+		<center>
+			<iframe class="frame" id="frame" src="essay1.html"></iframe>
+		</center>
+	</div>	
 </body>
 </html>

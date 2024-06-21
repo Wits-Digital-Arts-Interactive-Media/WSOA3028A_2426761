@@ -91,6 +91,12 @@ body {
 	height: 62vh;
 }
 
+#essayFrame {
+	border: hidden;
+	width: 70vw;
+	height: 62vh;
+}
+
 .articleNav {
 	position: center;
 	padding: 10px 0px;

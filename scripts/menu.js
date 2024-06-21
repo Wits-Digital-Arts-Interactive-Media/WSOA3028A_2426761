@@ -12,28 +12,42 @@ const menuItems = [
 export function initialize(currentPage) {
   let nav = document.getElementById("navMenu");
   menuItems.forEach((menuItem) => {
-    let text = document.createTextNode(menuItem.name);
-    let div = document.createElement("div");
+    if (menuItem.name == "Home") {
+      let div = document.getElementById("homeLink");
+      if (div != null) {
+        let a = document.createElement("a"); //<a href="index.html">mikisha-verse</a>
+        a.href = menuItem.href;
+        a.innerText = "mikisha-verse";
+        a.style.textDecoration = "none";
+        a.style.color = "white";
+        div.appendChild(a);
+      }
 
-    if (currentPage !== menuItem.name) {
-
-      let a = document.createElement("a");
-      a.appendChild(text);
-      a.href = menuItem.href;
-      a.className = "menuItem";
-
-      div.className = "menuItemDiv";
-      div.appendChild(a);
     }
     else {
-      let s = document.createElement("span");
-      s.appendChild(text);
-      s.className = "menuItem";
+      let text = document.createTextNode(menuItem.name);
+      let div = document.createElement("div");
 
-      div.className = "menuItemDiv activeItem " + menuItem.activeStyle;
-      div.appendChild(s);
+      if (currentPage !== menuItem.name) {
+
+        let a = document.createElement("a");
+        a.appendChild(text);
+        a.href = menuItem.href;
+        a.className = "menuItem";
+
+        div.className = "menuItemDiv";
+        div.appendChild(a);
+      }
+      else {
+        let s = document.createElement("span");
+        s.appendChild(text);
+        s.className = "menuItem";
+
+        div.className = "menuItemDiv activeItem " + menuItem.activeStyle;
+        div.appendChild(s);
+      }
+
+      nav.appendChild(div);
     }
-
-    nav.appendChild(div);
   });
 }

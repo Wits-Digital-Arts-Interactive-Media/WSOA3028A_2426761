@@ -19,8 +19,7 @@
 <body>
 	<header>
 		<div class="row">
-			<div class="column heading">
-				<label>mikisha-verse</label>
+			<div id="homeLink" class="column heading">
 			</div>
 			<div class="column navDiv">
 				<nav id="navMenu" />
@@ -35,7 +34,9 @@
 			</center>
 		</nav>
 		<center>
-			<iframe class="frame" id="frame" src="essay1.html"></iframe>
+			<iframe class="essayFrame" id="essayFrame" src="essay1.html"></iframe>
+			<button id="previous" onclick="moveBack()"><</button> &emsp;
+			<button id="next" onclick="moveNext()">></button>
 		</center>
 	</div>
 </body>

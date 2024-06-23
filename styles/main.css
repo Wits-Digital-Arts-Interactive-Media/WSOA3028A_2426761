@@ -6,6 +6,7 @@ html {
 
 body {
 	height: 100%;
+	padding: 80px 0 0 0;
 }
 
 .column {
@@ -13,6 +14,13 @@ body {
 	height: 100px;
 	justify-items: center;
 	align-content: center;
+}
+
+.row {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #00072D;
 }
 
 /* Clear floats after the columns */
@@ -73,6 +81,7 @@ body {
 	align-items: center;
 	align-content: center;
 	vertical-align: middle;
+	z-index: -1;
 }
 
 .homeTagline {
@@ -220,10 +229,6 @@ article {
 	height: 25%;
 }
 
-.phoneWF1 {
-	width: 20%;
-	height: 30%;
-}
 
 .designIcons {
 	width: 12.5%;
@@ -250,4 +255,64 @@ article {
 .artwork {
 	width: 20%;
 	height: 25%;
+}
+
+
+.burgerMenu {
+	width: 30px;
+	height: 14px;
+	margin: 0px 15px;
+	position: relative;
+	/*display: inline-block;*/
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	float: right;
+	cursor: pointer;
+	border-radius: 6px 0px;
+	display: none;
+}
+
+	.burgerMenu:after {
+		content: '';
+		width: 100%;
+		height: 4px;
+		background-color: #fff;
+		position: absolute;
+		top: 5px;
+		left: 0;
+	}
+
+#chkBMenu {
+	display: none;
+}
+
+@media(max-width:750px) {
+	.burgerMenu {
+		display: block;
+	}
+
+	.navDiv {
+		position: fixed;
+		text-align: -webkit-center;
+		width: 100%;
+		background-color: rgb(58, 58, 58, 0.8);
+		height: 100vh;
+		top: 80px;
+		left: 105%;
+		transition: all 1s;
+	}
+
+	.menuItemDiv {
+		display: block;
+		text-align: center;
+	}
+
+	div nav div {
+		display: block;
+		padding: 30px 30px;
+	}
+
+		div nav div a {
+			font-size: 20px;
+		}
 }

@@ -9,6 +9,7 @@
 	<link href="../styles/normalise.css" rel="stylesheet" />
 	<link href="../styles/main.css" rel="stylesheet" />
 
+	<script type="module" src="../scripts/common.js"></script>
 	<script type="module" src="../scripts/menu.js"></script>
 	<script type="module">
 		import { initialize } from './../scripts/menu.js';
@@ -20,8 +21,12 @@
 		<div class="row">
 			<div id="homeLink" class="column heading">
 			</div>
-			<div class="column navDiv">
+			<div id="navContainer" class="column navDiv">
 				<nav id="navMenu" />
+			</div>
+			<div class="column" style=" align-content:center;  float:right;">
+				<input type="checkbox" id="chkBMenu" onclick="toggleMenu()" />
+				<label for="chkBMenu"><span title="Burger Menu" class="burgerMenu"></span></label>
 			</div>
 		</div>
 	</header>
@@ -33,26 +38,11 @@
 			</center>
 		</nav>
 		<center>
-			<h2 class="portfolioH2">Mixed Media Art:</h2>
+			<h2 class="portfolioH2">Mixed Media Art</h2>
 			<p>
 				<img src="../images/portfolio/art1.jpg"
 						 alt="Pencil Drawing of Mikisha's friend: Ella"
 						 title="Pencil drawing of Ella"
-						 class="artwork" />
-
-				<img src="../images/portfolio/art2.jpg"
-						 alt="Pen Drawing of heart and brain"
-						 title="Pen drawing of heart and brain"
-						 class="artwork" />
-
-				<img src="../images/portfolio/art3.jpg"
-						 alt="Painting of an idea of entanglement"
-						 title="Entanglement painting"
-						 class="artwork" />
-
-				<img src="../images/portfolio/art4.jpg"
-						 alt="Lino print of brain and heart"
-						 title="Lino print of brain and heart"
 						 class="artwork" />
 
 				<img src="../images/portfolio/art5.jpg"
@@ -60,14 +50,30 @@
 						 title="Pencil drawing of african lady"
 						 class="artwork" />
 
-				<img src="../images/portfolio/art6.jpg"
-						 alt="Painting of African lady"
-						 title="Painting of African lady"
-						 class="artwork" />
-
 				<img src="../images/portfolio/art7.jpg"
 						 alt="Pencil Drawing of Nefetiti"
 						 title="Pencil drawing of Nefetiti"
+						 class="artwork" />
+
+				<img src="../images/portfolio/art9.jpg"
+						 alt="Pencil Drawing of busy mind"
+						 title="Pencil drawing of busy mind"
+						 class="artwork" />
+
+				<img src="../images/portfolio/headcage.png"
+						 class="artwork" />
+			</p>
+			<h2 class="portfolioH2">Acrylic Paint</h2>
+			<p>
+
+				<img src="../images/portfolio/art3.jpg"
+						 alt="Painting of an idea of entanglement"
+						 title="Entanglement painting"
+						 class="artwork" />
+
+				<img src="../images/portfolio/art6.jpg"
+						 alt="Painting of African lady"
+						 title="Painting of African lady"
 						 class="artwork" />
 
 				<img src="../images/portfolio/art8.jpg"
@@ -75,9 +81,56 @@
 						 title="Mixed media of the idea of dreaming"
 						 class="artwork" />
 
-				<img src="../images/portfolio/art9.jpg"
-						 alt="Pencil Drawing of busy mind"
-						 title="Pencil drawing of busy mind"
+				<img src="../images/portfolio/acrylic_Mario.png"
+						 class="artwork" />
+			</p>
+			<h2 class="portfolioH2">Watercolour Paint</h2>
+			<p>
+				<center>
+					<img src="../images/portfolio/pubg.png"
+							 class="artwork" />
+					<img src="../images/portfolio/dice_room.png"
+							 class="artwork" />
+					<img src="../images/portfolio/marble_girl.png"
+							 class="artwork" />
+				</center>
+			</p>
+			<h2 class="portfolioH2">Pen</h2>
+			<p>
+				<img src="../images/portfolio/red flower_receipt.png"
+						 class="artwork" />
+
+				<img src="../images/portfolio/art2.jpg"
+						 alt="Pen Drawing of heart and brain"
+						 title="Pen drawing of heart and brain"
+						 class="artwork" />
+
+				<img src="../images/portfolio/blue flower_receipt.png"
+						 class="artwork" />
+			</p>
+			<h2 class="portfolioH2">Pen Stippling</h2>
+			<p>
+				<img src="../images/portfolio/brain_flower_stippling.png"
+						 class="artwork" />
+				<img src="../images/portfolio/ps_controller.png"
+						 class="artwork" />
+				<img src="../images/portfolio/spaceman_on_moon.png"
+						 class="artwork" />
+				<img src="../images/portfolio/spacetrooper_stippling.png"
+						 class="artwork" />
+			</p>
+			<h2 class="portfolioH2">Mixed Media Art</h2>
+			<p>
+				<img src="../images/portfolio/art4.jpg"
+						 alt="Lino print of brain and heart"
+						 title="Lino print of brain and heart"
+						 class="artwork" />
+
+				<img src="../images/portfolio/spiderLily.png"
+						 class="artwork" />
+				<img src="../images/portfolio/monalisa.png"
+						 class="artwork" />
+				<img src="../images/portfolio/coffeeArt.png"
 						 class="artwork" />
 			</p>
 			<h2 class="portfolioH2">Body Art</h2>

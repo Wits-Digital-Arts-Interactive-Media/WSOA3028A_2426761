@@ -1,5 +1,6 @@
 const essayItems = [
-	"essay1.html"
+	"essay1.html",
+	"essay2.html"
 ]
 
 let essayIndex = 0;

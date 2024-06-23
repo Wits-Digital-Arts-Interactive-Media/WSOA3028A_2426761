@@ -9,6 +9,7 @@
 	<link href="../styles/normalise.css" rel="stylesheet" />
 	<link href="../styles/main.css" rel="stylesheet" />
 
+	<script type="module" src="../scripts/common.js"></script>
 	<script type="module" src="../scripts/menu.js"></script>
 	<script type="module">
 		import { initialize } from './../scripts/menu.js';
@@ -20,8 +21,12 @@
 		<div class="row">
 			<div id="homeLink" class="column heading">
 			</div>
-			<div class="column navDiv">
+			<div id="navContainer" class="column navDiv">
 				<nav id="navMenu" />
+			</div>
+			<div class="column" style=" align-content:center;  float:right;">
+				<input type="checkbox" id="chkBMenu" onclick="toggleMenu()" />
+				<label for="chkBMenu"><span title="Burger Menu" class="burgerMenu"></span></label>
 			</div>
 		</div>
 	</header>
@@ -77,15 +82,13 @@
 							 alt="A picture showing the wireframe for the Home page of this website on a phone screen"
 							 title="Home page wireframe - Phone view">
 
-					<img src="../images/designs/phoneBlogPage.png"
+					<img src="../images/designs/phoneBlogPage.png" style="width: 20%; height: 30%;"
 							 alt="A picture showing the wireframe for the blog page of this website on a phone screen"
-							 title="Blog page wireframe - Phone view"
-							 class="phoneWF1">
+							 title="Blog page wireframe - Phone view">
 
-					<img src="../images/designs/phoneProfile.png"
+					<img src="../images/designs/phoneProfile.png" style="width: 19.05%; height: 35%"
 							 alt="A picture showing the wireframe for the profile page of this website on a phone screen"
-							 title=" Profile page wireframe - Phone view"
-							 class="phoneWF1">
+							 title=" Profile page wireframe - Phone view">
 				</center>
 			</p>
 			<br />

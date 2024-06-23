@@ -9,6 +9,7 @@
 	<link href="../styles/normalise.css" rel="stylesheet" />
 	<link href="../styles/main.css" rel="stylesheet" />
 
+	<script type="module" src="../scripts/common.js"></script>
 	<script type="module" src="../scripts/menu.js"></script>
 	<script type="text/javascript" src="../scripts/blogPage.js"></script>
 	<script type="module">
@@ -22,8 +23,12 @@
 		<div class="row">
 			<div id="homeLink" class="column heading">
 			</div>
-			<div class="column navDiv">
+			<div id="navContainer" class="column navDiv">
 				<nav id="navMenu" />
+			</div>
+			<div class="column" style=" align-content:center;  float:right;">
+				<input type="checkbox" id="chkBMenu" onclick="toggleMenu()" />
+				<label for="chkBMenu"><span title="Burger Menu" class="burgerMenu"></span></label>
 			</div>
 		</div>
 	</header>

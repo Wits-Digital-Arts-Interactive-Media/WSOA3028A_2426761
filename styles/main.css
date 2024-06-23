@@ -21,14 +21,15 @@ body {
 	top: 0px;
 	width: 100%;
 	background-color: #00072D;
+	border-bottom: 1px solid #030059;
 }
 
-/* Clear floats after the columns */
-.row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
+	/* Clear floats after the columns */
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
 
 .heading {
 	margin-left: 10px;
@@ -81,7 +82,6 @@ body {
 	align-items: center;
 	align-content: center;
 	vertical-align: middle;
-	z-index: -1;
 }
 
 .homeTagline {
@@ -312,7 +312,11 @@ article {
 		padding: 30px 30px;
 	}
 
-		div nav div a {
-			font-size: 20px;
-		}
+	div nav div a {
+		font-size: 20px;
+	}
+
+	.iconContainer {
+		z-index: -1;
+	}
 }

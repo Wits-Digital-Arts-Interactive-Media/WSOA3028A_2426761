@@ -1,3 +1,12 @@
+function toggleSphereLinks() {
+	if (navigator.userAgentData.mobile) {
+		document.getElementById("myBlogs").style.visibility = "visible";
+		document.getElementById("myDesigns").style.visibility = "visible";
+		document.getElementById("myEssays").style.visibility = "visible";
+		document.getElementById("myProfile").style.visibility = "visible";
+		document.getElementById("myPortfolio").style.visibility = "visible";
+	}
+}
 
 function bigImg(imgId, linkId) {
 	let img = document.getElementById(imgId)

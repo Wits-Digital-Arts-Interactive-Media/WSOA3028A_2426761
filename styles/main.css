@@ -6,6 +6,9 @@ html {
 
 body {
 	height: 100%;
+}
+
+.genBody {
 	padding: 80px 0 0 0;
 }
 
@@ -13,7 +16,6 @@ body {
 	float: left;
 	height: 80px;
 	justify-items: center;
-	/*align-content: center;*/
 }
 
 .row {
@@ -48,7 +50,6 @@ body {
 	font-family: sans-serif;
 	text-align: right;
 	align-content: center;
-	/*position: fixed;*/
 }
 
 /*for the spheres*/
@@ -84,7 +85,6 @@ body {
 	align-items: center;
 	align-content: center;
 	vertical-align: middle;
-	/*z-index: -1*/
 }
 
 .homeTagline {

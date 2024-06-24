@@ -1,0 +1,14 @@
+﻿
+.image-container {
+	text-align: center;
+}
+
+	.image-container img {
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+	}
+
+		.image-container img.active {
+			visibility: visible;
+		}

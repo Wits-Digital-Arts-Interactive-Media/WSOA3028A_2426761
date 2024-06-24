@@ -6,6 +6,13 @@ function toggleSphereLinks() {
 		document.getElementById("myProfile").style.visibility = "visible";
 		document.getElementById("myPortfolio").style.visibility = "visible";
 	}
+	else {
+		document.getElementById("myBlogs").style.visibility = "hidden";
+		document.getElementById("myDesigns").style.visibility = "hidden";
+		document.getElementById("myEssays").style.visibility = "hidden";
+		document.getElementById("myProfile").style.visibility = "hidden";
+		document.getElementById("myPortfolio").style.visibility = "hidden";
+	}
 }
 
 function bigImg(imgId, linkId) {

@@ -16,9 +16,14 @@
 		initialize("Home");
 	</script>
 	<script type="text/javascript" src="scripts/menuAnimation.js"></script>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded', function () {
+			toggleSphereLinks();
+		});
+	</script>
 
 </head>
-<body onload="toggleSphereLinks()">
+<body>
 	<header>
 		<div class="row">
 			<div id="homeLink" class="column heading">
@@ -41,7 +46,7 @@
 			<img id="blogIcon" class="icon" src="images/home/blogIcon.png"
 					 onmouseover="bigImg('blogIcon','myBlogs')"
 					 onmouseout="normalImg('blogIcon', 'myBlogs')" />
-			<h1 id="myBlogs" style="position: absolute; align-items:center; visibility: hidden" onmouseover="bigImg('blogIcon', 'myBlogs')">
+			<h1 id="myBlogs" style="position: absolute;" onmouseover="bigImg('blogIcon', 'myBlogs')">
 				<a class="sphereNav" href="blogs/blogs.html"> BLOGS </a>
 			</h1>
 		</div>
@@ -50,7 +55,7 @@
 			<img id="designIcon" class="icon" src="images/home/yellowIcon.png"
 					 onmouseover="bigImg('designIcon','myDesigns')"
 					 onmouseout="normalImg('designIcon','myDesigns')" />
-			<h1 id="myDesigns" style="position: absolute; visibility: hidden" onmouseover="bigImg('designIcon', 'myDesigns')">
+			<h1 id="myDesigns" style="position: absolute;" onmouseover="bigImg('designIcon', 'myDesigns')">
 				<a class="sphereNav" href="design/design.html"> DESIGNS </a>
 			</h1>
 		</div>
@@ -59,7 +64,7 @@
 			<img id="essayIcon" class="icon" src="images/home/greenIcon.png"
 					 onmouseover="bigImg('essayIcon','myEssays')"
 					 onmouseout="normalImg('essayIcon','myEssays')" />
-			<h1 id="myEssays" style="position: absolute; visibility: hidden" onmouseover="bigImg('essayIcon', 'myEssays')">
+			<h1 id="myEssays" style="position: absolute;" onmouseover="bigImg('essayIcon', 'myEssays')">
 				<a class="sphereNav" href="essay/essay.html"> ESSAYS </a>
 			</h1>
 		</div>
@@ -68,7 +73,7 @@
 			<img id="profileIcon" class="icon" src="images/home/blueIcon.png"
 					 onmouseover="bigImg('profileIcon','myProfile')"
 					 onmouseout="normalImg('profileIcon','myProfile')" />
-			<h1 id="myProfile" style="position: absolute; visibility: hidden" onmouseover="bigImg('profileIcon', 'myProfile')">
+			<h1 id="myProfile" style="position: absolute;" onmouseover="bigImg('profileIcon', 'myProfile')">
 				<a class="sphereNav" href="profile/profile.html"> PROFILE </a>
 			</h1>
 		</div>
@@ -77,7 +82,7 @@
 			<img id="portfolioIcon" class="icon" src="images/home/menuIconGrey.png"
 					 onmouseover="bigImg('portfolioIcon','myPortfolio')"
 					 onmouseout="normalImg('portfolioIcon','myPortfolio')" />
-			<h1 id="myPortfolio" style="position: absolute; visibility: hidden" onmouseover="bigImg('portfolioIcon', 'myPortfolio')">
+			<h1 id="myPortfolio" style="position: absolute;" onmouseover="bigImg('portfolioIcon', 'myPortfolio')">
 				<a class="sphereNav" href="portfolio/portfolio.html"> PORTFOLIO </a>
 			</h1>
 		</div>

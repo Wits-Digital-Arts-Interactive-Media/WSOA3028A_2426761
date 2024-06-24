@@ -22,6 +22,7 @@ body {
 	width: 100%;
 	background-color: #00072D;
 	border-bottom: 1px solid #030059;
+	z-index: 100;
 }
 
 	/* Clear floats after the columns */
@@ -93,7 +94,7 @@ body {
 	justify-content: center;
 	font-family: Britannic;
 	font-size: 300%;
-	margin: 100px 0px;
+	margin: 90px 0px;
 }
 
 #frame {
@@ -249,13 +250,38 @@ article {
 }
 
 .bodyArt {
-	width: 20%;
-	height: 25%;
+	justify-content: space-between;
+	width: 250px;
+	height: 350px;
 }
 
 .artwork {
-	width: 20%;
-	height: 25%;
+	justify-content:space-between;
+}
+
+.pencil {
+	width: 250px;
+	height: 350px;
+}
+
+.acrylic {
+	width: 300px;
+	height: 425px;
+}
+
+.watercolour {
+	width: 250px;
+	height: 300px;
+}
+
+.pen {
+	width: 300px;
+	height: 425px;
+}
+
+.stippling {
+	width: 300px;
+	height: 425px;
 }
 
 .burgerMenu {
@@ -312,10 +338,6 @@ article {
 		div nav div a {
 			font-size: 20px;
 		}
-
-	.iconContainer {
-		z-index: -1;
-	}
 }
 
 .weeklyBImgs {

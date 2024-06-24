@@ -11,7 +11,8 @@ const blogItems = [
 	"week11.html",
 	"reflection2.html",
 	"week12.html",
-	"week13.html"
+	"week13.html",
+	"reflection3.html"
 ]
 
 let blogIndex = 0;
